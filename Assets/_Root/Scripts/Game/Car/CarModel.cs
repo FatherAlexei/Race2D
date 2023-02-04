@@ -1,10 +1,29 @@
+using Features.Shed.Upgrade;
+
 namespace Game.Car
 {
-    internal class CarModel
+    internal class CarModel : IUpgradable
     {
-        public readonly float Speed;
+        private readonly float _defaultSpeed;
 
-        public CarModel(float speed) =>
+        private readonly float _defaultJumpBoost;
+
+        public float Speed { get; set; }
+        public float JumpBoost { get; set; }
+
+        public CarModel(float speed, float jump)
+        {
+            _defaultSpeed = speed;
             Speed = speed;
+            _defaultJumpBoost = jump;
+            JumpBoost = jump;
+        }
+
+
+        public void Restore()
+        {
+            Speed = _defaultSpeed;
+            JumpBoost = _defaultJumpBoost;
+        }
     }
 }
