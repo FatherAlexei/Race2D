@@ -18,6 +18,10 @@ namespace Profile
         {
             CurrentState = new SubscriptionProperty<GameState>();
             CurrentCar = new CarModel(speedCar);
+<<<<<<< Updated upstream
+=======
+            Inventory = new InventoryModel();
+>>>>>>> Stashed changes
         }
     }
 }

@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.15</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.16</UnityProjectGeneratorVersion>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.10f1</UnityVersion>
@@ -321,19 +321,19 @@
       <HintPath>D:\Unity Editor\2021.3.10f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.17\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.17\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.17\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.17\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -794,11 +794,17 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Services.Analytics.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Analytics.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Analytics">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ResourceManager">
       <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>

@@ -2,7 +2,12 @@ using Ui;
 using Game;
 using Profile;
 using UnityEngine;
+<<<<<<< Updated upstream
 using Services.Analytics;
+=======
+using Features.Shed;
+using Features.Inventory;
+>>>>>>> Stashed changes
 
 internal class MainController : BaseController
 {
@@ -29,18 +34,25 @@ internal class MainController : BaseController
 
     protected override void OnDispose()
     {
+<<<<<<< Updated upstream
         _mainMenuController?.Dispose();
         _gameController?.Dispose();
 
+=======
+        DisposeControllers();
+>>>>>>> Stashed changes
         _profilePlayer.CurrentState.UnSubscribeOnChange(OnChangeGameState);
     }
 
 
     private void OnChangeGameState(GameState state)
     {
+        DisposeControllers();
+
         switch (state)
         {
             case GameState.Start:
+<<<<<<< Updated upstream
                 _mainMenuController = new MainMenuController(_placeForUi, _profilePlayer, _entryPoint);
                 _gameController?.Dispose();
                 _settingsController?.Dispose();
@@ -59,7 +71,27 @@ internal class MainController : BaseController
                 _mainMenuController?.Dispose();
                 _gameController?.Dispose();
                 _settingsController?.Dispose();
+=======
+                _mainMenuController = new MainMenuController(_placeForUi, _profilePlayer);
+                break;
+            case GameState.Settings:
+                _settingsMenuController = new SettingsMenuController(_placeForUi, _profilePlayer);
+                break;
+            case GameState.Shed:
+                _shedController = new ShedContext(_placeForUi, _profilePlayer);
+                break;
+            case GameState.Game:
+                _gameController = new GameController(_placeForUi, _profilePlayer);
+>>>>>>> Stashed changes
                 break;
         }
+    }
+
+    private void DisposeControllers()
+    {
+        _mainMenuController?.Dispose();
+        _settingsMenuController?.Dispose();
+        _shedController?.Dispose();
+        _gameController?.Dispose();
     }
 }

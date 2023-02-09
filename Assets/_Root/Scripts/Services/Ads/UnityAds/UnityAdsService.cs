@@ -46,8 +46,13 @@ namespace Services.Ads.UnityAds
 
         private IAdsPlayer CreateRewarded() =>
             _settings.Rewarded.Enabled
+<<<<<<< Updated upstream
             ? new RewardedPlayer(_settings.Rewarded.Id)
             : new StubPlayer("");
+=======
+                ? new RewardedAdsPlayer(_settings.Rewarded.Id)
+                : new StubPlayer("");
+>>>>>>> Stashed changes
 
         private IAdsPlayer CreateBanner() =>
             new StubPlayer("");

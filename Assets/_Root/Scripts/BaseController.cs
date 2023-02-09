@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -61,3 +62,7 @@ internal abstract class BaseController : IDisposable
         _gameObjects.Add(gameObject);
     }
 }
+=======
+internal abstract class BaseController : ParentObject
+{ }
+>>>>>>> Stashed changes
