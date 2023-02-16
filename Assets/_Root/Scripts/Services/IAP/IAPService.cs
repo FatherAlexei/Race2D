@@ -45,7 +45,7 @@ namespace Services.IAP
             _purchaseValidator = new PurchaseValidator();
             _purchaseRestorer = new PurchaseRestorer(_extensionProvider);
 
-            Log("Initialized Purchase");
+            Log("Initialized");
             Initialized?.Invoke();
         }
 

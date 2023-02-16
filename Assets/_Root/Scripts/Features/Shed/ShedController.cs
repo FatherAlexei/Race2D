@@ -16,6 +16,9 @@ namespace Features.Shed
 
     internal class ShedController : BaseController, IShedController
     {
+        private readonly ResourcePath _viewPath = new ResourcePath("Prefabs/Shed/ShedView");
+        private readonly ResourcePath _dataSourcePath = new ResourcePath("Configs/Shed/UpgradeItemConfigDataSource");
+
         private readonly ShedView _view;
         private readonly ProfilePlayer _profilePlayer;
         private readonly InventoryContext _inventoryContext;
@@ -23,26 +26,48 @@ namespace Features.Shed
 
 
         public ShedController(
-            [NotNull] ShedView view,
-            [NotNull] ProfilePlayer profilePlayer,
-            [NotNull] InventoryContext inventoryContext,
-            [NotNull] UpgradeHandlersRepository upgradeHandlersRepository)
+            [NotNull] Transform placeForUi,
+            [NotNull] ProfilePlayer profilePlayer)
         {
-            _view
-                = view ?? throw new ArgumentNullException(nameof(view));
+            if (placeForUi == null)
+                throw new ArgumentNullException(nameof(placeForUi));
 
             _profilePlayer
                 = profilePlayer ?? throw new ArgumentNullException(nameof(profilePlayer));
 
-            _inventoryContext
-              = inventoryContext ?? throw new ArgumentNullException(nameof(inventoryContext));
-
-            _upgradeHandlersRepository
-                = upgradeHandlersRepository ?? throw new ArgumentNullException(nameof(upgradeHandlersRepository));
+            _inventoryContext = CreateInventoryContext(placeForUi, _profilePlayer.Inventory);
+            _upgradeHandlersRepository = CreateRepository();
+            _view = LoadView(placeForUi);
 
             _view.Init(Apply, Back);
         }
 
+
+        private InventoryContext CreateInventoryContext(Transform placeForUi, IInventoryModel model)
+        {
+            var context = new InventoryContext(placeForUi, model);
+            AddContext(context);
+
+            return context;
+        }
+
+        private UpgradeHandlersRepository CreateRepository()
+        {
+            UpgradeItemConfig[] upgradeConfigs = ContentDataSourceLoader.LoadUpgradeItemConfigs(_dataSourcePath);
+            var repository = new UpgradeHandlersRepository(upgradeConfigs);
+            AddRepository(repository);
+
+            return repository;
+        }
+
+        private ShedView LoadView(Transform placeForUi)
+        {
+            GameObject prefab = ResourcesLoader.LoadPrefab(_viewPath);
+            GameObject objectView = Object.Instantiate(prefab, placeForUi, false);
+            AddGameObject(objectView);
+
+            return objectView.GetComponent<ShedView>();
+        }
 
 
         private void Apply()
@@ -55,13 +80,19 @@ namespace Features.Shed
                 _upgradeHandlersRepository.Items);
 
             _profilePlayer.CurrentState.Value = GameState.Start;
-            Log($"Apply. Current Speed: {_profilePlayer.CurrentCar.Speed}");
+
+            Log("Apply. " +
+                $"Current Speed: {_profilePlayer.CurrentCar.Speed}. " +
+                $"Current Jump Height: {_profilePlayer.CurrentCar.JumpHeight}");
         }
 
         private void Back()
         {
             _profilePlayer.CurrentState.Value = GameState.Start;
-            Log($"Back. Current Speed: {_profilePlayer.CurrentCar.Speed}");
+
+            Log("Back. " +
+                $"Current Speed: {_profilePlayer.CurrentCar.Speed}. " +
+                $"Current Jump Height: {_profilePlayer.CurrentCar.JumpHeight}");
         }
 
 
