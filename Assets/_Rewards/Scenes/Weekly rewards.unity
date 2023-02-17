@@ -1195,8 +1195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 063f1b92edbd4b8c812689152aa9dc57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <TimeCooldown>k__BackingField: 86400
-  <TimeDeadline>k__BackingField: 259200
+  <TimeCooldown>k__BackingField: 604800
+  <TimeDeadline>k__BackingField: 1814400
   <Rewards>k__BackingField:
   - <RewardType>k__BackingField: 0
     <IconCurrency>k__BackingField: {fileID: 21300000, guid: e0eac6b76fdd842e88a7f8c75ecffaf4, type: 3}
@@ -1557,6 +1557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit

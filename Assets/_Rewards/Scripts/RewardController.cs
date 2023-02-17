@@ -200,8 +200,8 @@ namespace Rewards
                 Reward reward = _view.Rewards[i];
                 int countDay = i + 1;
                 bool isSelected = i == _view.CurrentSlotInActive;
-
-                _slots[i].SetData(reward, countDay, isSelected);
+                string typeOfReward = _view.TimeCooldown == 86400 ? "Day: " : "Week: ";
+                _slots[i].SetData(reward, typeOfReward, countDay, isSelected);
             }
         }
     }

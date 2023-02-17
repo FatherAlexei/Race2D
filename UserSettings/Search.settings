@@ -10,7 +10,7 @@ scopes = {
 	"last_search.7BEC51F9" = ""
 	"OpenInspectorPreview.7BEC51F9" = "0"
 	"currentGroup.7BEC51F9" = "asset"
-	"last_search.DD5CDDE4" = "ref:Assets/_Rewards/Scripts/RewardType.cs"
+	"last_search.DD5CDDE4" = "ref:Assets/_Rewards/Scripts/ContainerSlotRewardView.cs"
 	"OpenInspectorPreview.DD5CDDE4" = "0"
 	"currentGroup.DD5CDDE4" = "scene"
 }
@@ -69,6 +69,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"ref:Assets/_Rewards/Scripts/ContainerSlotRewardView.cs"
 	"ref:Assets/_Rewards/Scripts/RewardType.cs"
 ]
 searchItemFavorites = [

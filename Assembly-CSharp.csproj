@@ -65,10 +65,12 @@
     <Compile Include="Assets\_Root\Scripts\Tool\Reactive\SubscriptionProperty.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\UpgradeItemConfig.cs" />
     <Compile Include="Assets\_Root\Scripts\Ui\MainMenu\MainMenuView.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\RewardView.cs" />
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\ExampleEventUpdate.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\IAdsPlayer.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\IUpgradeable.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\TapeBackground\TapeBackgroundController.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\InstallView.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\ResourceManagement\ResourcesLoader.cs" />
     <Compile Include="Assets\_Root\Scripts\Profile\ProfilePlayer.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\DontDestroyOnLoadObject.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\GyroscopeInputView.cs" />
     <Compile Include="Assets\_Root\Scripts\ParentObject.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\Settings\UnityAdsSettings.cs" />
+    <Compile Include="Assets\_Root\Scripts\Profile\InitialProfilePlayer.cs" />
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\ExampleUnityUpdate.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Analytics\UnityAnalytics\UnityAnalyticsService.cs" />
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\Counter.cs" />
@@ -104,10 +107,12 @@
     <Compile Include="Assets\_Root\Scripts\Services\IAP\IAPService.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\Items\ItemConfig.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\InventoryContext.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\Reward.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\AbilityItemConfigDataSource.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Analytics\AnalyticsManager.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\GameController.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\IUpgradeHandler.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\CurrencySlotView.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\TapeBackground\Background.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\IAbilityActivator.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\IAP\Settings\Product.cs" />
@@ -117,8 +122,10 @@
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\ExampleUpdateManagerUpdate.cs" />
     <Compile Include="Assets\_Battle\Scripts\MainWindowMediator.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\IAP\IIAPService.cs" />
+    <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedContext.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\Items\ItemView.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\InputGameController.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\RewardType.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\UpgradeHandlersRepository.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\UpgradeItemConfigDataSource.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\SpeedUpgradeHandler.cs" />
@@ -134,6 +141,7 @@
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\StubAbility.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\UnityAdsPlayer.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\StubUpgradeHandler.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\RewardController.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\RewardedAdsPlayer.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\Settings\AdsPlayerSettings.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\InventoryView.cs" />
@@ -144,6 +152,7 @@
     <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\IAbility.cs" />
     <Compile Include="Assets\_Battle\Scripts\Enemy.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\CurrencyView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedController.cs" />
     <Compile Include="Assets\_Root\Scripts\Ui\SettingsMenu\SettingsMenuView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\Items\ItemConfigDataSource.cs" />
@@ -152,16 +161,7 @@
     <Compile Include="Assets\_Root\Scripts\Game\Car\CarController.cs" />
     <Compile Include="Assets\_Root\Scripts\Profile\GameState.cs" />
     <Compile Include="Assets\_Root\Scripts\BaseContext.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\CurrencySlotView.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\RewardView.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\InstallView.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\CurrencyView.cs" />
     <Compile Include="Assets\_Rewards\Scripts\ContainerSlotRewardView.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\RewardController.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\Reward.cs" />
-    <Compile Include="Assets\_Rewards\Scripts\RewardType.cs" />
-    <Compile Include="Assets\_Root\Scripts\Profile\InitialProfilePlayer.cs" />
-    <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
