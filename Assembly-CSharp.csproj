@@ -152,6 +152,16 @@
     <Compile Include="Assets\_Root\Scripts\Game\Car\CarController.cs" />
     <Compile Include="Assets\_Root\Scripts\Profile\GameState.cs" />
     <Compile Include="Assets\_Root\Scripts\BaseContext.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\CurrencySlotView.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\RewardView.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\InstallView.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\CurrencyView.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\ContainerSlotRewardView.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\RewardController.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\Reward.cs" />
+    <Compile Include="Assets\_Rewards\Scripts\RewardType.cs" />
+    <Compile Include="Assets\_Root\Scripts\Profile\InitialProfilePlayer.cs" />
+    <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

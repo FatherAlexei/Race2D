@@ -1,6 +1,6 @@
 trackSelection = true
 fetchPreview = true
-wantsMore = false
+defaultFlags = 0
 keepOpen = false
 queryFolder = "Assets"
 onBoardingDoNotAskAgain = true
@@ -10,6 +10,9 @@ scopes = {
 	"last_search.7BEC51F9" = ""
 	"OpenInspectorPreview.7BEC51F9" = "0"
 	"currentGroup.7BEC51F9" = "asset"
+	"last_search.DD5CDDE4" = "ref:Assets/_Rewards/Scripts/RewardType.cs"
+	"OpenInspectorPreview.DD5CDDE4" = "0"
+	"currentGroup.DD5CDDE4" = "scene"
 }
 providers = {
 	find = {
@@ -52,8 +55,21 @@ providers = {
 		priority = 210
 		defaultAction = null
 	}
+	at = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+	st = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+}
+objectSelectors = {
 }
 recentSearches = [
+	"ref:Assets/_Rewards/Scripts/RewardType.cs"
 ]
 searchItemFavorites = [
 ]
