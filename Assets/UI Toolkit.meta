@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/UI Toolkit.meta
 guid: adcfe387ca0b9eb478319fac8bceb178
+=======
+guid: 0f973b0bff447467a9c13c471afb5ecc
+>>>>>>> Stashed changes:Assets/Plugins.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

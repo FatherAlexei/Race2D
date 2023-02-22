@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/_Root/Resources/images.meta
 guid: d82092567715b1941adf86acdff5db44
+=======
+guid: d4adf4d787aac48cd962491b66b46692
+>>>>>>> Stashed changes:Assets/Plugins/Demigiant.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

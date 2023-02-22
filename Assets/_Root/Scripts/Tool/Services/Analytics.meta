@@ -1,8 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/_Root/Scripts/Tool/Services/Analytics.meta
 guid: 0c84aa5b35e69f147bf1bb5486f9bb9a
+=======
+guid: b27f58ae5d5c33a4bb2d1f4f34bd036d
+>>>>>>> Stashed changes:Assets/Plugins/Demigiant/DOTween/Editor.meta
 folderAsset: yes
 DefaultImporter:
-  externalObjects: {}
   userData: 
-  assetBundleName: 
-  assetBundleVariant: 

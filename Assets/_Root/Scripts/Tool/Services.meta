@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream:Assets/_Root/Scripts/Tool/Services.meta
 guid: 81d5855752cf6564394aa52fc42ceaea
+=======
+guid: 9fdb5b5423ce748e0b3e8731d85c1ff9
+>>>>>>> Stashed changes:Assets/Plugins/Demigiant/DOTween.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
