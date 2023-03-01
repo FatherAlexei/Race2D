@@ -14,25 +14,16 @@ namespace Game
         private readonly SubscriptionProperty<float> _leftMoveDiff;
         private readonly SubscriptionProperty<float> _rightMoveDiff;
 
-        private readonly ResourcePath _resourcePath = new ResourcePath("Prefabs/Game/GameView");
-
         private readonly CarController _carController;
         private readonly InputGameController _inputGameController;
         private readonly TapeBackgroundController _tapeBackgroundController;
         private readonly AbilitiesContext _abilitiesContext;
-        private readonly GameView _gameView;
-        private ProfilePlayer _profilePlayer;
 
 
         public GameController(Transform placeForUi, ProfilePlayer profilePlayer)
         {
-            _profilePlayer = profilePlayer;
-
             _leftMoveDiff = new SubscriptionProperty<float>();
             _rightMoveDiff = new SubscriptionProperty<float>();
-
-            _gameView = LoadView(placeForUi);
-            _gameView.Init(BackToMainMenu);
 
             _carController = CreateCarController(profilePlayer.CurrentCar);
             _inputGameController = CreateInputGameController(profilePlayer, _leftMoveDiff, _rightMoveDiff);
@@ -42,16 +33,6 @@ namespace Game
             ServiceRoster.Analytics.SendGameStarted();
         }
 
-        private void BackToMainMenu() => _profilePlayer.CurrentState.Value = GameState.Start;
-
-        private GameView LoadView(Transform placeForUi)
-        {
-            GameObject prefab = ResourcesLoader.LoadPrefab(_resourcePath);
-            GameObject objectView = Object.Instantiate(prefab, placeForUi, false);
-            AddGameObject(objectView);
-
-            return objectView.GetComponent<GameView>();
-        }
 
         private TapeBackgroundController CreateTapeBackground(SubscriptionProperty<float> leftMoveDiff, SubscriptionProperty<float> rightMoveDiff)
         {
