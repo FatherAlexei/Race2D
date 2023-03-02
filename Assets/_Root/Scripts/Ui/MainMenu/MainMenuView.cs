@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 namespace Ui
 {
-    public class MainMenuView : MonoBehaviour
+    internal class MainMenuView : MonoBehaviour
     {
         [Header("Settings")]
         [SerializeField] private string _productId;

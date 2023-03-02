@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\AbilitiesContext.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\NotificationSchedulerFactory.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\IAP\PurchaseRestorer.cs" />
     <Compile Include="Assets\_Root\Scripts\BaseRepository.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\AndroidNotificationScheduler.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Bundles\Examples\DataAudioBundle.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\AbilityType.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\ResourceManagement\ContentDataSourceLoader.cs" />
@@ -66,6 +68,7 @@
     <Compile Include="Assets\UpdateManager\Scripts\UpdateManager.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Reactive\SubscriptionProperty.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\UpgradeItemConfig.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\Examples\NotificationWindow.cs" />
     <Compile Include="Assets\_Root\Scripts\Ui\MainMenu\MainMenuView.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\Examples\Extensions\GameObjectExtensions.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\RewardView.cs" />
@@ -86,21 +89,26 @@
     <Compile Include="Assets\UpdateManager\Scripts\OverridableMonoBehaviour.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\UnityAdsService.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\IAdsService.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\INotificationScheduler.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Fight\FightView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\GunAbility.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\GyroscopeInputView.cs" />
     <Compile Include="Assets\_Root\Scripts\ParentObject.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\Settings\UnityAdsSettings.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\Settings\NotificationSettings.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\MainWindowView.cs" />
     <Compile Include="Assets\_Root\Scripts\Profile\InitialProfilePlayer.cs" />
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\ExampleUnityUpdate.cs" />
+    <Compile Include="Assets\_Root\Scripts\Ui\PauseMenu\PauseMenuController.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Analytics\UnityAnalytics\UnityAnalyticsService.cs" />
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\Counter.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\BaseInputView.cs" />
+    <Compile Include="Assets\_Root\Scripts\Ui\PauseMenu\PauseMenuView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\AbilitiesController.cs" />
     <Compile Include="Assets\_Root\Scripts\MainController.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\StubPlayer.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Reactive\ISubscriptionProperty.cs" />
+    <Compile Include="Assets\_Root\Scripts\Ui\PauseMenu\Pause.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\InputKeyboard.cs" />
     <Compile Include="Assets\_Root\Scripts\Ui\MainMenu\MainMenuController.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\Ads\UnityAds\InterstitialPlayer.cs" />
@@ -114,6 +122,7 @@
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\InventoryContext.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\Examples\DOTween\TweenCubePath.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\Reward.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\Localization\Examples\LocalizationWindow.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\AbilityItemConfigDataSource.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Bundles\Examples\AssetBundleViewBase.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\Currency\CurrencyModel.cs" />
@@ -125,6 +134,7 @@
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\PopupView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\IUpgradeHandler.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\Currency\CurrencySlotView.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\Localization\Examples\LocalizationWindowByEvents.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Fight\StartFightController.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\TapeBackground\Background.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\IAbilityActivator.cs" />
@@ -133,13 +143,16 @@
     <Compile Include="Assets\_Root\Scripts\Services\Analytics\IAnalyticsService.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\CustomButton_Obsolete.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\IAP\Settings\ProductLibrary.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\IOSNotificationScheduler.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\Examples\DOTween\TweenCubeColor.cs" />
+    <Compile Include="Assets\_Root\Scripts\Ui\GameMenu\GameMenuView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\Currency\CurrencyController.cs" />
     <Compile Include="Assets\UpdateManager\Example Scene\Scripts\ExampleUpdateManagerUpdate.cs" />
     <Compile Include="Assets\_Root\Scripts\Services\IAP\IIAPService.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedContext.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\Examples\DOTween\TweenCubeSequence.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\Items\ItemView.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\PushNotifications\StubNotificationScheduler.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\InputGameController.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\RewardType.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Fight\PlayerData.cs" />
@@ -154,6 +167,7 @@
     <Compile Include="Assets\_Root\Scripts\Features\Fight\DataType.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Inventory\InventoryModel.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\Upgrade\UpgradeType.cs" />
+    <Compile Include="Assets\_Root\Scripts\Ui\GameMenu\GameMenuController.cs" />
     <Compile Include="Assets\_Root\Scripts\Game\InputLogic\FloatInputJoystick.cs" />
     <Compile Include="Assets\_Root\Scripts\Tool\Tween\AnimationButtonComponent.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\AbilitiesView.cs" />
@@ -173,6 +187,7 @@
     <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\AbilitySystem\Abilities\IAbility.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Fight\Enemy.cs" />
+    <Compile Include="Assets\_Root\Scripts\Tool\Localization\Examples\LocalizationWindowByApi.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Rewards\Currency\CurrencyView.cs" />
     <Compile Include="Assets\_Root\Scripts\Features\Shed\ShedController.cs" />
     <Compile Include="Assets\_Root\Scripts\Ui\SettingsMenu\SettingsMenuView.cs" />
